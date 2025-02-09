@@ -11,7 +11,7 @@ requires-python = ">=3.8"
 license = "MIT"
 keywords = []
 authors = [
-  { name = "volv", email = "115556838+saturn-volv@users.noreply.github.com" },
+  { name = "saturn-volv", email = "115556838+saturn-volv@users.noreply.github.com" },
 ]
 classifiers = [
   "Development Status :: 4 - Beta",
@@ -24,14 +24,12 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = [
-  "glob", "json", "os"
-]
+dependencies = []
 
 [project.urls]
-Documentation = "https://github.com/volv/grindstone#readme"
-Issues = "https://github.com/volv/grindstone/issues"
-Source = "https://github.com/volv/grindstone"
+Documentation = "https://github.com/saturn-volv/grindstone#readme"
+Issues = "https://github.com/saturn-volv/grindstone/issues"
+Source = "https://github.com/saturn-volv/grindstone"
 
 [tool.hatch.version]
 path = "src/grindstone/__about__.py"

@@ -1,6 +1,7 @@
-from __init__ import glob
-from __init__ import json
-from __init__ import os
+import glob
+import json
+import os
+from typing import Callable
 
 # Clears the ".\out" directory incase something needed to be removed or an extra file appeared.
 try:
@@ -24,7 +25,7 @@ class Grindstone:
                 Grindstone.__item_cache[path] = data
                 return data
 
-    def apply_modifier(path:str, appended_data:object, predicate: callable[[str], bool]) -> None:
+    def apply_modifier(path:str, appended_data:object, predicate: Callable[[str], bool]) -> None:
         try:
             for filedir in glob.glob('input\\*.json'):
                 pass
